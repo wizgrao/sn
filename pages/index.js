@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {fromString, toString} from "../lib/utils.js";
 import {useState} from "react";
@@ -18,7 +17,7 @@ export default function Home() {
         </h1>
         <div>
             <textarea onChange={e => setVal(e.target.value)} value={val} /> < br />
-          {toString(fromString(val))}
+          = {toString(fromString(val))}
         </div>
       </main>
       <i>thanks to fabrac 2022 squad</i>
